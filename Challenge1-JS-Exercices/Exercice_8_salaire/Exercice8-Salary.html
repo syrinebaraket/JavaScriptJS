@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salary Net</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Salary Calculator</h1>
+    <form id="myForm">
+      <div>
+        <label for="SalaireBrut">Salaire brut:</label>
+        <input id="SalaireBrut" type="number">$
+      </div>
+      <div>
+        <label for="Bonus">Bonus:</label>
+        <input id="Bonus" type="checkbox">
+      </div>
+      <div>
+        <label for="Allocation">Allocation:</label>
+        <input id="Allocation" type="checkbox">
+      </div>
+      <div>
+        <label for="sexe">Tu es:&nbsp;:</label>
+        <select id="sexe">
+          <option value="Homme">Homme</option>
+          <option value="Femme">Femme</option>
+        </select>
+      </div>
+      <div>
+        <label for="PersonnesEnCharge">Personnes en charge:</label>
+        <input id="PersonnesEnCharge" type="number">
+      </div>
+      <div>
+        <input type="button" value="Calculer" onclick="writeV()">
+        <input type="button" value="Reset" onclick="resetAll()">
+      </div>
+    </form>
+    <br>
+    <p>Impôt sur le revenu $: <span id="Impot"></span></p>
+    <p>Assurance $: <span id="Assurance"></span></p>
+    <p>Régime de pensions du Canada $: <span id="CanadaPension"></span></p>
+    <p>Bonus/Allocation $: <span id="BonusAllocation"></span></p>
+    <p>Salaire net $: <span id="SalaireNet"></span></p>
+    <script src="Exercice8-Salary.js" type="text/javascript"></script>
+  </body>
+</html>
