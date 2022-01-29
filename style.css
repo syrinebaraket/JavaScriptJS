@@ -1,0 +1,56 @@
+body {
+  background-color: #f3f3f3;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+.box {
+  max-width: 900px;
+  background-color: #ffffff;
+  height: 580px;
+  max-height: 580px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  /* box-shadow: 0 1rem 1.5rem rgb(0 157 220) !important; */
+}
+#input-form{background-color: aqua;}
+h1 {
+  color: #009ddc;
+}
+
+.todo {
+  background-color: #469abb;
+  color: #ffffff;
+}
+
+ul {
+  height: 410px;
+  max-height: 290px;
+  overflow: auto;
+  overflow-y:scroll;
+}
+
+input[type='text'],
+input[type='text']:focus {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.filtered {
+  display: none !important;
+}
+
+.done {
+  text-decoration: line-through;
+}
